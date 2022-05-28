@@ -1,0 +1,251 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.home-content {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem;
+  
+}
+
+.home-text-content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.home-text-content h2 {
+  font-family: 'VT323', monospace;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 4rem;
+  color: #dfdede;
+  background: rgba(0, 0, 0, 0.562);
+  padding: 1em;
+}
+
+.grid-one-content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.grid-main-heading {
+  margin-bottom: 1rem;
+}
+
+.grid-description {
+  font-family: 'Manrope', sans-serif;
+  font-weight: bolder;
+  padding-bottom: 3rem;
+}
+
+h2.grid-main-heading, article h3{
+  font-family: 'Alfa Slab One', cursive;
+}
+
+article p {
+  font-weight: bolder;
+  background: #00000077;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3em;
+  counter-reset: grid-counter;
+}
+
+.grid h3 {
+  font-size: 2.35rem;
+  position: absolute;
+  padding-top: 2.5rem;
+  padding-left: 10rem;
+  padding-bottom: 2rem;
+}
+
+.contact-form .form-flex {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.form-flex legend {
+  font-style: italic;
+  font-size: 2rem; 
+  margin-bottom: 2rem;
+}
+
+.contato legend {
+  margin-bottom: -0.5rem;
+}
+
+.form-group {
+  flex: 1 1 32rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  border: none;
+  background: #fefefe;
+  padding: 1.2rem;
+  width: 100%;
+  font-size: 1.8rem;
+  outline: none;
+  color: #bbb;
+  border-radius: 1rem;
+}
+
+.write:focus,
+.form-group textarea:focus {
+  box-shadow: 0 0 0.2rem 0.3rem #bbb;
+}
+
+input#whatsapp-contato {
+  margin-top: -10rem;
+}
+
+input#checkbox.novidades {
+  margin: -10rem;
+  margin-left: -16rem;
+}
+
+.form-group button {
+  border: 0.3rem solid #fefefe;
+  background: none;
+  color: #e6e6e6;
+  margin: 4rem auto;
+  padding: 1.2rem ;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  border-radius: 1rem;
+}
+
+.form-group button:hover {
+  background: #fefefe;
+  color: #bbb;
+  box-shadow: 0 0 0.2rem 0.3rem #bbb;
+}
+
+.form-group ::placeholder {
+  color: #bbb;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: #fefefe;
+  width: 4.3rem;
+  height: 4.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  color: #888;
+  transform: rotate(-90deg);
+  border: 0.1rem solid #8888;
+}
+
+.back-to-top:hover{
+  color: rgb(184, 184, 184);
+  transition: all 200ms ease-in-out;
+  box-shadow: 0 0 0.1rem 0.2rem #888;
+}
+
+@media (max-width: 860px) {
+  .grid h3 {
+    font-size: 1.7rem;
+  }
+  
+  article p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid h3 {
+    font-size: 1.3rem;
+  }
+  
+  article p {
+    font-size: 1.2rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 475px) {
+  .grid-main-heading {
+    font-size: 3rem;
+  }
+
+  .grid-description {
+    font-size: 1.4rem;
+  }
+
+  .grid h3 {
+    padding-left: 6.8rem;
+  }
+
+  article img {
+    max-width: 65px;
+  }
+
+  input#checkbox.novidades {
+    margin: -10rem;
+    margin-left: -17rem;
+  }
+}
+
+@media (max-width: 395px) {
+  
+  .grid h3 {
+    padding-left: 5.5rem;
+  }
+
+  article img {
+    max-width: 50px;
+  }
+
+  input#checkbox.novidades {
+    margin: -10rem;
+    margin-left: -14rem;
+  }
+
+}
+
+@media (max-width: 320px) {
+
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  input#checkbox.novidades {
+    margin: -10rem;
+    margin-left: -12rem;
+  }
+
+  article img {
+    max-width: 50px;
+  }
+
+  .form-group label  {
+    font-size: 1.5rem;
+  }
+
+}

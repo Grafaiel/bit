@@ -1,0 +1,34 @@
+.section {
+  min-height: 100vh;
+}
+
+.bg {
+  background-size: cover;
+  background-position: center center;
+}
+
+.main-bg {
+  background-image: url('../img/bit-cartaozinho.jfif');
+}
+
+.services-bg {
+  background-image: url('../img/slanted-gradient\ \(2\).svg');
+  color: #eeececef;
+}
+
+.map-bg {
+  background-image: url('../img/slanted-gradient.svg');
+  color: #dfdede;
+}
+
+.contact-bg {
+  background-image: url('../img/cornered-stairs.svg');
+  color: #dfdede;
+}
+
+.main-content {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 10rem 3rem;
+}
+
