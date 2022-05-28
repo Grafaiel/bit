@@ -21,22 +21,15 @@ footer {
   margin-top: 1rem;
 }
 
-
-.socials a{
-  text-decoration: none;
-  color: #fefefe;
-}
-
-.socials .dark-letter{
-  text-decoration: none;
-  color: #fefefe;
-}
-
-.socials a i{
-  font-size: 3rem;
+.insta, .whats{
+  width: 5rem;
   transition: color .4s ease;
 }
 
-.socials a:hover i{
-  color: #fefefe;
+.whats {
+  width: 6.3rem;
+}
+
+.whats:hover, .insta:hover {
+  color: #fefefe8a;
 }

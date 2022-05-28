@@ -51,6 +51,7 @@ h2.grid-main-heading, article h3{
 article p {
   font-weight: bolder;
   background: #00000077;
+  padding: 1rem;
 }
 
 .grid {
@@ -102,7 +103,7 @@ article p {
   box-shadow: 0 0 0.2rem 0.3rem #bbb;
 }
 
-.form-group button {
+.form-group button, .form-group .btn  {
   border: 0.3rem solid #fefefe;
   background: none;
   color: #e6e6e6;
@@ -114,7 +115,7 @@ article p {
   border-radius: 1rem;
 }
 
-.form-group button:hover {
+.form-group button:hover, .form-group .btn:hover {
   background: #fefefe;
   color: #bbb;
   box-shadow: 0 0 0.2rem 0.3rem #bbb;
