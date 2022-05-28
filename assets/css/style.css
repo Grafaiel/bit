@@ -86,6 +86,16 @@ article p {
   margin-bottom: 0.5rem;
 }
 
+
+.grid-contato {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.grid-contato label {
+  padding-left: 1rem;
+}
+
 .form-group {
   flex: 1 1 32rem;
 }
