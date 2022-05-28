@@ -92,27 +92,27 @@
             <fieldset class="form-flex">
               <div class="form-group">
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" placeholder="Nome" class="write">
+                <input type="text" name="nome" id="nome" placeholder="Nome" class="write" required>
               </div>
-  
+
               <div class="form-group">
                 <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" placeholder="E-mail" class="write">
+                <input type="email" name="email" id="email" placeholder="E-mail" class="write" required>
               </div>
   
               <div class="form-group">
                 <label for="telefone">Telefone</label>
-                  <input type="number" name="telefone" id="telefone" placeholder="(XX) X XXXX-XXXX" class="write">
+                  <input type="number" name="telefone" id="telefone" placeholder="(XX) X XXXX-XXXX" class="write" required>
               </div>
   
               <div class="form-group">
-                <fieldset class="form-flex contato">
+                <fieldset class="form-flex contact">
                   <legend> Como preferem o nosso contato? </legend>
-                  <div class="grid-contato">
-                    <label for="email-contato"><input type="radio" name="contato" id="email-contato" value="Email" required> Email </label>
-                    <label for="tele  fone-contato"><input type="radio" name="contato" id="telefone-contato" value="Telefone" required> Telefone
+                  <div class="flex-radio">
+                    <label for="email-contato"><input type="radio" name="contato" id="email-contato" class="radio" required> Email </label>
+                    <label for="tele  fone-contato"><input type="radio" name="contato" id="telefone-contato" class="radio" required> Telefone
                     </label>
-                    <label for="whatsapp-contato"><input type="radio" name="contato" id="whatsapp-contato"  value="Whatsapp" checked required> Whatsapp
+                    <label for="whatsapp-contato"><input type="radio" name="contato" id="whatsapp-contato" checked class="radio" required > Whatsapp
                     </label>
                   </div>
                 </fieldset>
@@ -130,8 +130,9 @@
               </div>
   
               <div class="form-group">
-                <label for="novidades"> Gostaria de receber nossas novidades por Email?</label>
-                <input type="checkbox"name="novidades" id="checkbox" checked>
+                  <div class="flex-checkbox">
+                    <input style="width: 30%;" type="checkbox"name="checkbox" id="checkbox" class="checkbox" checked><label for="checkbox"> Gostaria de receber nossas novidades por Email?</label>
+                  </div>
               </div>
   
               <div class="form-group full-width">
@@ -150,6 +151,7 @@
   </main>
   <footer>
     <h2><img src="./assets/img/footer-img-removebg-preview-white.png" alt="Logo branco com fundo preto BITUMUARAMA"></h2>
+    <h2><img src="./assets/img/icon-formatar-removebg-preview.png" alt=""></h2>
     <p class="text-footer">&copy; Copyright BIT - 2022</p>
   </footer>
   <a class="back-to-top" href="#">➤</a>

@@ -57,5 +57,7 @@ p {
 select {
   width: 70%;
   font-size: 1.8rem;
+  padding: 1.2rem;
+  border-radius: 1rem;
   color: rgb(121, 121, 121);
 }

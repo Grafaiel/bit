@@ -76,26 +76,6 @@ article p {
   gap: 3rem;
 }
 
-.form-flex legend {
-  font-style: italic;
-  font-size: 2rem; 
-  margin-bottom: 2rem;
-}
-
-.contato legend {
-  margin-bottom: 0.5rem;
-}
-
-
-.grid-contato {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.grid-contato label {
-  padding-left: 1rem;
-}
-
 .form-group {
   flex: 1 1 32rem;
 }
@@ -143,6 +123,45 @@ article p {
 .form-group ::placeholder {
   color: #bbb;
 }
+
+
+
+.form-flex legend {
+  margin-bottom: 2rem;
+}
+
+.contact legend {
+  margin-bottom: 0.5rem;
+}
+
+.flex-radio {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.flex-radio label {
+  padding-left: 1rem;
+}
+
+.flex-checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.flex-checkbox label {
+  cursor: pointer;
+}
+
+.radio, .checkbox {
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  border: 0.3rem solid #000;
+  border-radius: 50%;
+}
+
 
 .back-to-top {
   position: fixed;
