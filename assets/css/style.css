@@ -22,7 +22,7 @@ html {
   text-transform: uppercase;
   text-align: center;
   font-size: 4rem;
-  color: #000;
+  color: rgb(148, 148, 148);
   background: rgba(0, 0, 0, 0.562);
   padding: 1em;
 }
